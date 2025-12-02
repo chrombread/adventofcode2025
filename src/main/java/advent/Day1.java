@@ -13,7 +13,6 @@ public class Day1 {
         int start = 50;
         try {
             File file = new File("src/main/java/data/day1.txt");
-            System.out.println(file.getAbsolutePath());
             BufferedReader reader = new BufferedReader(new FileReader(file));
             List<String> lines = reader.readAllLines();
             for( String line : lines) {
