@@ -8,8 +8,7 @@ import java.util.List;
 
 public class Day1 {
 
-    private static int penis = 0;
-    private static int cyclesTally = 0;
+    private static int count = 0;
     public static void run() throws FileNotFoundException {
         int start = 50;
         try {
@@ -26,7 +25,7 @@ public class Day1 {
                 }
                 start = performSwitch(start, num, multiplier);
             }
-            System.out.println("Value "+(penis));
+            System.out.println("Value "+(count));
         } catch (Exception e) {
             System.out.println("File not found!");
         }
@@ -37,7 +36,7 @@ public class Day1 {
             state+= mult;
             if(state == 100) state = 0;
             if(state == -1) state = 99;
-            if(state == 0) penis++;
+            if(state == 0) count++;
         }
        return state;
     }
