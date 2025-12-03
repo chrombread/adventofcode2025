@@ -19,6 +19,9 @@ public class Main {
             case 2 -> {
                 Day2.run();
             }
+           case 3 -> {
+               Day3.run();
+           }
            default -> System.out.println("Day not found");
        }
 
