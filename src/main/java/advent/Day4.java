@@ -26,7 +26,7 @@ public class Day4 {
             }
         }
 
-        boolean rollRemoved = false;
+        boolean rollRemoved;
         do {
                 rollRemoved = false;
             for (int row = 0; row < states.length; row++) {
