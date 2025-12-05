@@ -4,7 +4,7 @@ package advent;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// click the <icon src="AllIcons.Actions.Execute"/> icon contains the gutter.
 public class Main {
 
     static void main() throws Exception {
@@ -24,6 +24,9 @@ public class Main {
            }
            case 4 -> {
                Day4.run();
+           }
+           case 5 -> {
+               Day5.run();
            }
            default -> System.out.println("Day not found");
        }
