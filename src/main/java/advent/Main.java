@@ -28,6 +28,10 @@ public class Main {
            case 5 -> {
                Day5.run();
            }
+           case 6 -> {
+               Day6.run();
+           }
+
            default -> System.out.println("Day not found");
        }
 
