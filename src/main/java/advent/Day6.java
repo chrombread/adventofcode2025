@@ -106,19 +106,16 @@ public class Day6 {
                 String append = "_".repeat(lengthComp);
                 if(function.alignment == EquationAlignment.DC) {
                     function.strInputProper.add(input+append);
-                    System.out.println("DC for "+ function.strInput);
                 }
                 else {
                     function.strInputProper.add(append+input);
                 }
             }
 
-
           // read the values downwards and add them to the integer values list of the function
           for(int i = 0; i < function.strInputProper.getFirst().length(); i++) {
               int pointer = 0;
               StringBuilder val = new StringBuilder();
-              System.out.println(function.strInputProper.get(i));
               while(pointer < function.strInputProper.size()) {
                   val.append(function.strInputProper.get(pointer).charAt(i));
                   pointer++;
@@ -127,15 +124,10 @@ public class Day6 {
               function.inputs.add(Integer.parseInt(strRep));
           }
 
-
-
-
         }
-
       long total = 0;
       for(Map.Entry<Integer,DayFunction> entry : functionMap.entrySet()) {
           total += entry.getValue().operator.function.apply(entry.getValue().inputs);
-          System.out.println("Function: " +entry.getValue().strInputProper+"maps to " +entry.getValue().inputs);
       }
       System.out.println("Day 2 total: "+total);
 
