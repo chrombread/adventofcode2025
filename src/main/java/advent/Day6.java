@@ -1,21 +1,14 @@
 package advent;
 
-import javax.annotation.processing.SupportedSourceVersion;
-import javax.swing.GroupLayout;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
-import java.util.OptionalInt;
 import java.util.StringTokenizer;
 import java.util.function.Function;
-import java.util.function.UnaryOperator;
 
 public class Day6 {
     public static void run() throws Exception {
