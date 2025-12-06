@@ -19,14 +19,12 @@ import java.util.function.UnaryOperator;
 
 public class Day6 {
     public static void run() throws Exception {
-       System.out.println("Part 1: ");
        part1();
-
-       System.out.println("Part 2: ");
        part2();
     }
 
     public static void part1() throws Exception {
+        final long startTime = System.currentTimeMillis();
         File rangeFile = new File("src/main/java/data/day6.txt");
         BufferedReader reader = new BufferedReader(new FileReader(rangeFile));
         List<String> inputs = reader.readAllLines();
@@ -54,10 +52,12 @@ public class Day6 {
             total += entry.getValue().operator.function.apply(entry.getValue().inputs);
         }
         System.out.println("Day 1 total: "+total);
+        System.out.println("Time delta (ms): "+ (System.currentTimeMillis() - startTime));
     }
 
 
     public static void part2() throws Exception {
+        final long startTime = System.currentTimeMillis();
         File rangeFile = new File("src/main/java/data/day6.txt");
         BufferedReader reader = new BufferedReader(new FileReader(rangeFile));
         List<String> inputs = reader.readAllLines();
@@ -130,6 +130,7 @@ public class Day6 {
           total += entry.getValue().operator.function.apply(entry.getValue().inputs);
       }
       System.out.println("Day 2 total: "+total);
+      System.out.println("Time delta (ms): "+ (System.currentTimeMillis() - startTime));
 
     }
 
